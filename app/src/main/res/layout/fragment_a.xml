@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F6EBC2"
+    android:padding="10dp"
+    tools:context=".AFragment">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Your Message..."
+        app:boxCornerRadiusTopEnd="20dp"
+        app:boxCornerRadiusTopStart="20dp"
+        app:counterEnabled="true"
+        app:endIconMode="clear_text"
+        app:helperText="Click send button to send!"
+        app:helperTextTextColor="#00406A">
+
+        <EditText
+            android:id="@+id/et_a_send_message"
+            android:layout_width="match_parent"
+            android:layout_height="300dp" />
+
+        <TextView
+            android:id="@+id/tv_a_recevied_message"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:background="#E6E6E6"
+            android:layout_marginTop="10dp"
+            />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_a_send"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:backgroundTint="#1AA4EF"
+            android:text="Send to B" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+</FrameLayout>
